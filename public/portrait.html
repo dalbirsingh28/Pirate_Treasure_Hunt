@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ETTALONG PIRATE POINTS BONANZA</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body class="beach-bg text-center">
+  <div class="container-fluid">
+    <div class="container">
+      <header class="header mt-5">
+        <img src="./assets/images/ettalong-logo.png" class="company-logo" alt="" />
+        <img src="./assets/images/banner.png" class="img-fluid mt-3" alt="" />
+      </header>
+      <div class="main">
+        <h2 class="subtitle text-variant font--irish-uncial mb-4">Total Won</h2>
+        <div class="row justify-content-center">
+          <div class="col-sm-4 col-12">
+            <div class="treasure">
+              <strong class="treasure_title">Mystery</strong>
+              <img src="./assets/images/Treasure.png" class="img-fluid treasure_img" alt="" />
+              <div class="treasure_info text-center blink">
+                <strong>
+                  <span>Won: </span>
+                  <span class="treasure_box_points js-island-points">0</span>
+                </strong>
+                <time class="js-island-date">( - )</time>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 offset-1 col-12">
+            <div class="treasure">
+              <strong class="treasure_title">Diamond</strong>
+              <img src="./assets/images/chest3.png" class="img-fluid treasure_img" alt="" />
+              <div class="treasure_info text-center blink">
+                <strong>
+                  <span>Won: </span>
+                  <span class="treasure_box_points js-island-points">0</span>
+                </strong>
+                <time class="js-island-date">( - )</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-4 col-12">
+            <div class="treasure">
+              <strong class="treasure_title">Gold</strong>
+              <img src="./assets/images/chest4.png" class="img-fluid treasure_img" alt="" />
+              <div class="treasure_info text-center blink">
+                <strong>
+                  <span>Won: </span>
+                  <span class="treasure_box_points js-island-points">0</span>
+                </strong>
+                <time class="js-island-date">( - )</time>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="treasure">
+              <strong class="treasure_title">Silver</strong>
+              <img src="./assets/images/chest2.png" class="img-fluid treasure_img" alt="" />
+              <div class="treasure_info text-center blink mt-3">
+                <strong>
+                  <span>Won: </span>
+                  <span class="treasure_box_points js-island-points">0</span>
+                </strong>
+                <time class="js-island-date">( - )</time>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="treasure">
+              <strong class="treasure_title">Antique</strong>
+              <img src="./assets/images/chest1.png" class="img-fluid treasure_img" alt="" />
+              <div class="treasure_info text-center blink">
+                <strong>
+                  <span>Won: </span>
+                  <span class="treasure_box_points js-island-points">0</span>
+                </strong>
+                <time class="js-island-date">( - )</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--start curtains  when all treasure found-->
+        <div class="curtains">
+          <div class="curtains_wall">
+            <img src="./assets/images/gold-trophy.gif" class="img-fluid trophy--size" alt="">
+            <h2 class="subtitle">Congratulations <br> Me Hearty's</h2>
+            <h2>Treasure Hunt Complete</h2>
+            <h2>3 Million points Found</h2>
+          </div>
+        </div>
+        <!--end curtains-->
+      </div>
+    </div>
+    <footer class="footer m-auto">
+      <h3 class="subtitle text-variant font--irish-uncial mb-5">Treasure to be Found</h3>
+      <div class="ticker d-flex align-items-center justify-content-center">
+        <div class="js-ticker ticker-variant"></div>
+      </div>
+      <div class="promotion-days">
+        <marquee behavior="alternate">
+          Play - Thur - Fri - Sat - Sun
+        </marquee>
+      </div>
+      <strong class="powered-by">Powered by outAbox</strong>
+    </footer>
+  </div>
+</body>
+<script src="/assets/libs/socket.io.js"></script>
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/ticker.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>

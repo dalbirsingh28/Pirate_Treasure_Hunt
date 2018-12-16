@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "CloisterBlack";
+  src: url("../fonts/CloisterBlack/CloisterBlack.eot"),
+    url("../fonts/CloisterBlack/CloisterBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CloisterBlack/CloisterBlack.woff2") format("woff2"),
+    url("../fonts/CloisterBlack/CloisterBlack.woff") format("woff"),
+    url("../fonts/CloisterBlack/CloisterBlack.svg#CloisterBlack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IrishUncialfabeta-Bold";
+  src: url("../fonts/irishuncialfabeta/IrishUncialfabeta-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "CloisterBlack";
+}
+
+.beach-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.company-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+.font--irish-uncial {
+  font-family: "IrishUncialfabeta-Bold";
+}
+
+.mt-negative {
+  margin-top: -30px;
+}
+
+.text-variant {
+  line-height: 1em;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/*Island treasure*/
+.treasure {
+  position: relative;
+}
+
+.treasure_title {
+  color: #d4af37;
+  display: block;
+  font-weight: bold;
+}
+
+.treasure_info {
+  text-align: center;
+  font-weight: bold;
+}
+
+.treasure_info time {
+  display: block;
+}
+
+/* blinking animation of text */
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  color: #d4af37;
+  animation: blink 1s infinite;
+}
+
+/* ticker */
+.ticker {
+  height: 200px;
+  margin: 0 auto;
+  letter-spacing: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/ticker.png);
+}
+
+.ticker-variant {
+  cursor: pointer;
+  text-overflow: clip;
+  box-sizing: content-box;
+  color: #000;
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  text-shadow: 0 1px 0 rgb(204, 204, 204), 0 2px 0 rgb(201, 201, 201), 0 3px 0 rgb(187, 187, 187), 0 4px 0 rgb(185, 185, 185), 0 5px 0 rgb(170, 170, 170), 0 6px 1px rgba(0, 0, 0, 0.0980392), 0 0 5px rgba(0, 0, 0, 0.0980392), 0 1px 3px rgba(0, 0, 0, 0.298039), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.247059), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.14902);
+}
+
+.powered-by {
+  color: #fff;
+  font-size: 2vw;
+}
+
+/* promo days*/
+.promotion-days {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+/*============================= Devices orientation =============================*/
+/* Portrait */
+@media screen and (orientation: portrait) {
+  .beach-bg {
+    background-image: url(../images/bg.png);
+  }
+
+  .header {
+    height: 22vh;
+  }
+
+  .company-logo {
+    width: 50%;
+  }
+
+  .main {
+    position: relative;
+    height: 55vh;
+  }
+
+  .subtitle {
+    font-size: 6vw;
+  }
+
+  .treasure_title {
+    font-size: 4vw;
+  }
+
+  .treasure_img {
+    width: 80%;
+    height: auto;
+  }
+
+  .treasure_info {
+    font-size: 3vw;
+  }
+
+  .ticker {
+    width: 75%;
+    font-size: 12vw;
+  }
+
+  .promotion-days {
+    font-size: 4vw;
+  }
+
+  footer {
+    height: 20vh;
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+  .beach-bg {
+    background-image: url(../images/landscape-slate.png);
+  }
+
+  .company-logo {
+    width: 20%;
+  }
+
+  .subtitle {
+    font-size: 3vw;
+  }
+
+  .treasure_title {
+    font-size: 1.5vw;
+  }
+
+  .treasure_info {
+    font-size: 1.5vw;
+  }
+
+  .treasure_img {
+    width: 40%;
+    height: auto;
+  }
+
+  .ticker {
+    height: 170px;
+    font-size: 6vw;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .promotion-days {
+    font-size: 2vw;
+  }
+
+  .powered-by {
+    font-size: 1vw;
+  }
+
+  .mt-10 {
+    top: 18vh;
+  }
+}
+
+/* parda */
+.curtains {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.curtains_wall {
+  position: relative;
+  height: inherit;
+  padding: 10%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: url(../images/giphy.gif) repeat-x, url(../images/wall.png);
+}
+
+.curtains .subtitle {
+  font-size: 5vw;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.trophy--size {
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c06700, 0 0 40px #c06700, 0 0 50px #c06700, 0 0 60px #c06700, 0 0 70px #c06700;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #914f03, 0 0 40px #914f03, 0 0 50px #914f03, 0 0 60px #914f03, 0 0 70px #914f03, 0 0 80px #914f03;
+  }
+}
